@@ -48,7 +48,7 @@ class App extends Component {
         <Header1 values={values} />
         <Button handleClick={this.handleClick}/>
         <h3>You have clicked me {this.state.counter} times!</h3>
-        <Header2 values={values}/>
+        <Header2 values={values} style={style1}/>
         <h3>{products}</h3>
         <h3>{cart}</h3>
       </div>
@@ -58,7 +58,7 @@ class App extends Component {
 
 const style1 = {
   color: 'pink',
-  fontFamily: 'sans-serif'
+  fontFamily: 'sans-serif',
 }
 const values = {
   headerCounter: "Counter",
